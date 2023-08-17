@@ -45,3 +45,49 @@ Some notes
    3. 使用：
 
       <FaBars />  直接使用组件
+
+8. CSS 变量 / CSS 属性
+
+9. HSL 颜色
+
+   ==hsl (*hue*, *saturation*, *lightness*)==
+
+   - **Hue** is a degree on the **color wheel** from 0 to 360.   ==0 is red, 120 is green, and 240 is blue.==
+   - **Saturation** is a percentage value. ==0% means a shade of gray, and 100% is the full color.==
+   - **Lightness** is also a percentage. ==0% is black, 50% is neither light or dark, 100% is white==
+
+10. font-style:
+
+    - https://fonts.google.com/ 查看
+
+    - montserrat 作者选用
+
+    - 点击并添加所选样式 [300, normal 400, bold 700等]
+
+    - 然后右侧 复制Link到 public/index.html中
+
+      ```
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      ```
+
+    - 记得 **font-family** 加载
+
+      ```
+      body {
+          font-family: 'Montserrat', sans-serif;
+      }
+      ```
+
+11. Router中的 a 和 link 标签 关系
+
+    - 从**【最终渲染】的 DOM 来看，这两者都是链接，【都是 `<a>` 标签】**。
+
+    - 区别是：
+      - `<Link>` 是 react-router 里实现路由跳转的链接，一般配合 `<Route>` 使用，react-router **【接管了其默认的链接跳转行为】**，区别于传统的页面跳转，**`<Link>` 的“跳转”行为只会触发相匹配的 `<Route>` 对应的页面内容更新，而不会刷新整个页面**。
+      - 而 `<a>` 标签就是**普通的超链接**了，用于从当前页面跳转到 href 指向的另一个页面（非锚点情况）。
+
+    
+
+12. object-fit css属性 使用
+
+    https://www.w3schools.com/css/css3_object-fit.asp
