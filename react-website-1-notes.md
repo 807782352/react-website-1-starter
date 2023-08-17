@@ -9,4 +9,6 @@ Some notes
    1. npm uninstall xxx
    2. 可以在package.json 中查看包的情况
 4. npm i react-router-dom
-5. 
+5. 文件夹：
+   1. pages 文件夹： 装【动】态路由？
+   2. components文件夹： 装【静】态小组件？
