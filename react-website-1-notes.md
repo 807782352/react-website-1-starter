@@ -91,3 +91,24 @@ Some notes
 12. object-fit css属性 使用
 
     https://www.w3schools.com/css/css3_object-fit.asp
+
+13. ### vw/vh
+
+    目标：能够使用vw单位设置网页元素的尺寸
+    它们是 **相对单位，对视口的尺寸计算结果**
+
+    l vw：viewport width
+    1vw = 1/100视口宽度
+
+    l vh：viewport height
+    1vh = 1/100视口高度。
+    我们若想刚好实现一屏的话可以用100vh来实现，可以适用于不同的分辨率。
+    *注：vw和vh在同一个选择器中不能同时出现，同一选择器中只能出现一个。
+
+14. Flex 布局
+
+    https://www.w3schools.com/cssref/playdemo.php?filename=playcss_align-content
+
+    - place-items  简写属性
+
+      https://developer.mozilla.org/zh-CN/docs/Web/CSS/place-items
