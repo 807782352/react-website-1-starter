@@ -1,6 +1,7 @@
 .main__header {
     width: 100vw;
-    height: 100vh; 
+    /* height: 100vh;  */
+    height: calc(100vh - 3rem) ; 
     display: grid;
     align-items: center;
     margin-top: 3rem;
