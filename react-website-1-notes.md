@@ -112,3 +112,39 @@ Some notes
     - place-items  简写属性
 
       https://developer.mozilla.org/zh-CN/docs/Web/CSS/place-items
+
+15. grid-template-columns
+
+    用于设置网格布局中的列数及宽度
+
+    - **1fr** 【一种新的长度单位】
+
+      在CSS Grid 网格布局中，引入了一种新的长度单位**fr(fraction)**。 它表示Grid 布局中中剩余空间(leftover space)的一部分(fraction)。 一般来说1fr 的意思是“**100%的剩余空间**”
+
+    - **1fr 1fr** 可以简单理解为1比1
+
+16. grid 中的 **gap**
+
+    可以设置 网格之间的距离
+
+17. place-items: center 实现在父类内 **完美居中**
+    1. place-items 是同时设置 align-items 和 justify-items 的快速方法。通过将其设置为 center ， align-items 和 justify-items 都将设置为 center。
+    2. https://blog.csdn.net/ljtjianting/article/details/121679976
+
+
+
+18. filter 滤镜属性
+
+    [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS) **`filter`** 属性将**模糊blur()**或**颜色偏移等图形效果(e.g. contrast() ）**应用于元素。滤镜通常用于调整图像、背景和边框的渲染。
+
+
+
+19. **transition 效果**
+
+    https://www.runoob.com/css3/css3-transitions.html
+
+    里面有个属性： **transition-timing-function**, 可以看下
+
+    https://www.runoob.com/cssref/css3-pr-transition-timing-function.html
+
+    

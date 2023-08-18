@@ -17,7 +17,7 @@ export default function NavBar() {
     return (
         <nav>
             <div className="container nav__container">
-                <Link to="/" className='logo'>
+                <Link to="/" className='logo' onClick={() => setIsNavShowing(false)}>
                     <img src={Logo} alt="Nav Logo" />
                 </Link>
 
@@ -28,7 +28,7 @@ export default function NavBar() {
                                 <li key={index}>
                                     <NavLink to={path}
                                         className={({ isActive }) => isActive ? 'active-nav' : ''}
-                                    >{name}</NavLink>
+                                        onClick={() => setIsNavShowing(!isNavShowing)}>{name}</NavLink>
                                 </li>
                             )
                         })

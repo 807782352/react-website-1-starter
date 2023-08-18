@@ -21,7 +21,7 @@ nav {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    place-items: center;
     /* 子绝父相，即使任何边偏移都不写，就是为了留着position属性 */
     position: relative;
 }
