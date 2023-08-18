@@ -115,7 +115,7 @@ Some notes
 
 15. grid-template-columns
 
-    用于设置网格布局中的列数及宽度
+    用于**设置网格布局中的【列数】及宽度**
 
     - **1fr** 【一种新的长度单位】
 
@@ -148,3 +148,19 @@ Some notes
     https://www.runoob.com/cssref/css3-pr-transition-timing-function.html
 
     
+
+20. <small>标签： html中 字体变小的一种标签
+21. flex 和 grid的区别：
+    1. flex 用于 **一维**
+    2. grid 用于 **二维**
+
+22. margin-inline 的用法
+
+    https://blog.csdn.net/YopenLang/article/details/124892727 **[margin、border、padding 前缀都一样]**
+
+    - `border-inline`实际上`border-inline-start`和`border-inline-end`的缩写形式。
+    - 不仅`writing-mode`，逻辑属性还会受`direction`和`text-orientation`影响。
+
+23. margin-inline: auto;
+
+    1. 相当于 margin-inline-start 和 margin-inline-end 都是auto

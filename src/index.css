@@ -61,7 +61,7 @@ h2 {
 
 /* Router 最终渲染还是会到a标签上*/
 a {
-    color: var(--color-gray-100)
+    color: var(--color-gray-100);
 }
 
 img {
