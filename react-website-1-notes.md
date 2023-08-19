@@ -3,12 +3,16 @@ Some notes
 1. npx create-react-app ./   
    1. 在当前目录下创建react脚手架
    2. 确保 当前目录下是空的
+
 2. npm i react-icons  
    1. 安装react-icons
+
 3. 想要删除一个包： 
    1. npm uninstall xxx
    2. 可以在package.json 中查看包的情况
+
 4. npm i react-router-dom
+
 5. 文件夹：
    1. pages 文件夹： 装【动】态路由？
    2. components文件夹： 装【静】态小组件？
@@ -115,6 +119,8 @@ Some notes
 
 15. grid-template-columns
 
+    https://blog.csdn.net/u013565133/article/details/102912734
+
     用于**设置网格布局中的【列数】及宽度**
 
     - **1fr** 【一种新的长度单位】
@@ -164,3 +170,17 @@ Some notes
 23. margin-inline: auto;
 
     1. 相当于 margin-inline-start 和 margin-inline-end 都是auto
+
+24. useState用法！！
+
+    1. https://juejin.cn/post/6844903999083118606
+
+    2. 小结一波
+
+       - 调用`useState()` Hook 来启用函数组件中的状态。
+       - `useState(initialValue)`的**第一个参数**`initialValue`是**状态的初始值**。
+       - `[state, setState] = useState(initialValue)`**返回**一个包含`2`个元素的数组:**状态值**和**状态更新函数**。
+       - 使用新值**调用状态更新器函数`setState(newState)`更新状态**。或者，可以**使用一个回调`setState(prev => next)`来调用状态更新器**，该回调将返回基于先前状态的新状态。
+       - 调用状态更新器后，React 确保重新渲染组件，以使新状态变为当前状态。
+
+       

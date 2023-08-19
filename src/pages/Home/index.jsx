@@ -3,6 +3,7 @@ import './index.css'
 import MainHeader from '../../components/MainHeader'
 import Programs from '../../components/Programs'
 import Values from '../../components/Values'
+import FAQs from '../../components/FAQs'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <MainHeader />
       <Programs />
       <Values />
+      <FAQs />
     </Fragment>
   )
 }

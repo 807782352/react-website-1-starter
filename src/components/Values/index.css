@@ -1,10 +1,10 @@
 .values__container {
     display: grid;
     grid-template-columns: 38% 50%;
+    align-items: center;
     gap: 12%;
 
 }
-
 
 .values__image {
     filter: saturate(0.25);
