@@ -20,3 +20,11 @@
     background-color: var(--color-secondary);
     color: var(--color-gray-600);
 }
+
+/* MEDIA Queries (medium media) */
+@media screen and (max-width: 1024px) {
+    .programs__wrapper {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}

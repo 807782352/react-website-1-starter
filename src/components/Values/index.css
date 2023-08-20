@@ -1,7 +1,7 @@
 .values__container {
     display: grid;
     grid-template-columns: 38% 50%;
-    align-items: center;
+    align-items: flex-start;
     gap: 12%;
 
 }
@@ -34,4 +34,20 @@
 .values__value span{
     position: absolute;
     top: -1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .values__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .values__wrapper {
+        gap: 4rem 3rem;
+    }
+
+    .values__image {
+        display: none;
+    }
 }

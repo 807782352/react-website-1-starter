@@ -99,3 +99,38 @@ img {
 .btn.sm:hover {
     background-color: var(--color-gray-100);
 }
+
+
+/* Media Queries (medium screens) */
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: purple;
+    }
+
+    .container {
+        width: var(--container-width-md);
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Media Queries (small screens) */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+
+
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+}

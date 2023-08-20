@@ -56,3 +56,22 @@
     filter: blur(10px);
 }
 
+
+
+/*MEDIA QUERIES (medium screen)*/
+@media screen and (max-width: 1024px) {
+    /* main header */
+    .main__header {
+        height: fit-content;
+        padding: 12rem 0;
+    }
+
+    .main__header-container{
+        gap: 0;
+    }
+
+    .main__header-circle {
+        width: 16rem;
+        height: 16rem;
+    }
+}
