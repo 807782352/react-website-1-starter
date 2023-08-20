@@ -184,3 +184,89 @@ Some notes
        - 调用状态更新器后，React 确保重新渲染组件，以使新状态变为当前状态。
 
        
+
+25. flex 布局 和 grid布局
+
+    - https://fe.zuo11.com/css/flex-grid.html#%E9%A1%B9%E7%9B%AE%E5%B1%9E%E6%80%A7
+
+    - https://medium.com/@SampanPeng/%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80-grid-%E6%98%AF%E4%B8%80%E7%A7%8D%E5%B0%86%E7%BD%91%E9%A1%B5%E5%88%92%E5%88%86%E6%88%90%E7%BD%91%E7%8A%B6%E7%9A%84%E6%A0%BC%E5%AD%90%E7%9A%84%E4%B8%80%E7%A7%8D%E5%B8%83%E5%B1%80%E6%96%B9%E6%A1%88-%E5%8F%AF%E4%BB%A5%E6%83%B3%E8%B1%A1%E6%88%90%E8%A1%A8%E6%A0%BC-%E5%8D%95%E5%85%83%E6%A0%BC%E4%B9%8B%E9%97%B4%E5%8F%AF%E4%BB%A5%E8%B7%A8%E8%A1%8C%E6%88%96%E8%80%85%E8%B7%A8%E5%88%97%E5%90%88%E5%B9%B6-%E5%8F%AF%E4%BB%A5%E6%AF%94flex%E7%BB%84%E5%90%88%E5%87%BA%E6%9D%A5%E6%9B%B4%E5%8A%A0%E5%A4%8D%E6%9D%82%E7%9A%84%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80-1bdbe1474887
+
+    
+
+    **记忆：** 
+
+    - justify - 和主轴（一般水平维度）有关  
+
+    - align - 和侧轴（一般垂直维度）有关
+
+    - content - 和整体布局有关
+
+    - items - 和成员个体有关
+
+      
+
+    - grid-template-columns 和 grid-template-rows
+
+    - grid-gap 
+
+    
+
+26. align-items 和 align-content 区别
+
+    **总结**
+
+    回到定义，align-items 和 align-content 的差异可以总结为如下两点。
+
+    1. **align-items 的【上下文是行内】**，**align-content 的【上下文是弹性盒子容器】**；
+
+    2. align-items 控制成员的对齐行为，align-content 控制所有行的对齐行为。
+
+       
+
+    具体差异可以看如下截图：（以conter为例）
+
+    ![img](https://img-blog.csdnimg.cn/ec25f0b0fac3402fbaabb913abbb4d24.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBALS3lsbHmsLTkuIDnqIstLQ==,size_10,color_FFFFFF,t_70,g_se,x_16)
+
+    
+
+    图0
+
+    当align-items=“conter”；【上下文是**行内（即对每一行而言）**】
+
+    ![img](https://img-blog.csdnimg.cn/9354881a570748cfb05355cfda22c0ce.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBALS3lsbHmsLTkuIDnqIstLQ==,size_12,color_FFFFFF,t_70,g_se,x_16)
+
+    图1
+
+    当align-content=“conter”；【上下文是整个容器】
+
+    ![img](https://img-blog.csdnimg.cn/4509786d75f44381a139b4edda57102c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBALS3lsbHmsLTkuIDnqIstLQ==,size_11,color_FFFFFF,t_70,g_se,x_16)
+
+    
+
+27. display: flex 和 inline-flex 的区别
+
+    https://www.jianshu.com/p/4d596708f61b
+
+    默认情况下：若没设置宽高：
+
+    1. flex：  宽度自动100% 
+    2. inline-flex:  宽度和高度自适应
+
+    
+
+28. fit-content
+
+    可以用在width、height等上面；这意味着盒子会使用可用的空间，但永远不会超过 [`max-content`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/max-content)
+
+
+
+29. svg  【可缩放矢量图形文件】
+
+    - PNG & JPEG  光栅图像 =》 他们将图像存储在 彩色正方形的网格中。他们**具有固定的分倍率**，增加大小会降低图像的质量
+    - SVG & PDF 矢量图形 => 他们由一组点和点之间的线，由数学公式来决定这些点和线的位置和形状。 所以他们**放大或缩小，仍会保持着他们的空间关系**
+
+    
+
+30.  border-box    vs   content-box（默认）
+    - border-box 的Width =  实际设置的width 【这个教程用的是它】
+    - content-box 的width = 设置的width + border + padding【默认】
