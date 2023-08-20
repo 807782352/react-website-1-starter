@@ -71,3 +71,23 @@ footer {
         gap: 4rem;
     }
 }
+
+/*MEDIA QUERIES (small screen)*/
+@media screen and (max-width: 600px) {
+    footer {
+        margin-top: 7rem;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer__container article {
+        align-items: center;
+    }
+
+    .footer__container article p {
+        text-align: center;
+    }
+}

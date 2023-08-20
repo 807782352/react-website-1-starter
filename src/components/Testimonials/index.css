@@ -68,3 +68,10 @@ small.testimonial__title {
         width: 75%;
     }
 }
+
+/*MEDIA QUERIES (small screen)*/
+@media screen and (max-width: 600px) {
+    .testimonials {
+        width: 100%;
+    }
+}
