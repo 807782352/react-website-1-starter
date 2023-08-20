@@ -270,3 +270,38 @@ Some notes
 30.  border-box    vs   content-box（默认）
     - border-box 的Width =  实际设置的width 【这个教程用的是它】
     - content-box 的width = 设置的width + border + padding【默认】
+
+31. 为什么 **a标签** 最好一定要加  **rel = "noopener noreferer" 属性** 
+
+    - 注：现在 绝大部分浏览器上 **noopener 和 noreferrer 其实是【默认】属性**，所以不加也可以。
+
+    - 当给链接加上 `target="_blank"` 后， 目标网页会在新的标签页中打开， 此时在新打开的页面中可通过 `window.opener` 获取到源页面的 `window` 对象， 这就埋下了安全隐患。
+
+      具体来说,
+
+      - 你自己的网页 A 有个链接是打开另外一个三方地址 B
+      - **B 网页通过 `window.opener` 获取到 A 网页的 `window` 对象**， ==进而可以使得 A 页面跳转到一个钓鱼页面 `window.opener.location.href ="abc.com"`， 用户没注意地址发生了跳转， 在该页面输入了用户名密码后则发生信息泄露==
+
+    - 具体操作可以看 https://www.youtube.com/watch?v=wWzlN096DvA
+
+    - 或者看文章 https://zhuanlan.zhihu.com/p/366736912
+
+32. grid 和 flex 应该选择哪种形式展示？
+
+    https://juejin.cn/post/7197279149337395260#heading-11
+
+    在选择其中一种布局时，可以考虑以下问题：
+
+    --    组件的子项如何显示？ 内联还是作为列和行？
+
+    --    组件如何在各种尺寸的屏幕上显示？
+
+    
+
+    - 如果组件的子项都以**内联inline**的形式显示 => Flex 布局可能就很好
+      - 比如： 网站导航、操作列表、Tab菜单、内容居中等
+    - 如果需要多个列和行 **block形式** => Grid布局可能就很好
+      - 比如：侧边栏 +  内容区域、卡片网格等
+    - 【但个人感觉： Grid可以替换掉Flex】
+
+    
