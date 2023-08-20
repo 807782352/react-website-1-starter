@@ -103,9 +103,9 @@ img {
 
 /* Media Queries (medium screens) */
 @media screen and (max-width: 1024px) {
-    body {
+    /* body {
         background-color: purple;
-    }
+    } */
 
     .container {
         width: var(--container-width-md);
