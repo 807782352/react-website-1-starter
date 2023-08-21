@@ -267,7 +267,7 @@ Some notes
 
     
 
-30.  border-box    vs   content-box（默认）
+30. border-box    vs   content-box（默认）
     - border-box 的Width =  实际设置的width 【这个教程用的是它】
     - content-box 的width = 设置的width + border + padding【默认】
 
@@ -304,4 +304,16 @@ Some notes
       - 比如：侧边栏 +  内容区域、卡片网格等
     - 【但个人感觉： Grid可以替换掉Flex】
 
-    
+33. **transform： skew(15deg)** 可以让图片倾斜15度
+
+34. 关于 @media and (max-width: xxx) 的说法：
+
+    1. max-width 可以理解为 <=
+
+    2. min-width 可以理解为 >= 
+
+    3. 而我们知道css中 **后面的属性如果和前面的重复，是会覆盖的**
+
+       如果 先写 max-width:1024px； 后写 max-width: 600px; 那么 画区间可以得知，后面的会 **继承覆盖**前面的 【但影响不到前面的，因为后面的无法包裹住前面的】
+
+       但反过来，如果先 max-width: 600px;  后max-width:1024px，那么前面的600px将会**失效** 【后面的会覆盖掉前面的，因为后面的包裹住了前面的】。

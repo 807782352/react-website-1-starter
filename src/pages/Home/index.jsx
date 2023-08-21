@@ -15,7 +15,6 @@ export default function Home() {
       <Values />
       <FAQs />
       <Testimonials />
-      <Footer />
     </Fragment>
   )
 }
