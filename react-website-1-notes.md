@@ -306,9 +306,9 @@ Some notes
 
 33. **transform： skew(15deg)** 可以让图片倾斜15度
 
-34. 关于 @media and (max-width: xxx) 的说法：
+34. 关于 @media and (max-width: xxx) 的 **写作顺序**：
 
-    1. max-width 可以理解为 <=
+    1. max-width 可以理解为 <= 
 
     2. min-width 可以理解为 >= 
 
