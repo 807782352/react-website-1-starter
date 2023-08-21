@@ -17,7 +17,7 @@ export default function Footer() {
                     <img src={Logo} alt="footer logo" />
                 </Link>
                 <p>
-                A person with a good physical health can live life to its fullest extent. A great wording “Health is Wealth” truly fits for those who are physical and mentally fit. Fitness plays important role in our lives because if you are mentally and physically fit then you will be less prone to medical conditions. 
+                A person with a good physical health can live life to its fullest extent. A great wording “Health is Wealth” truly fits for those who are physical and mentally fit. 
                 </p>
                 <div className="footer__socials">
                     <a href="http://linkedin.com/" target='_blank' rel='noreferrer noopener'>
