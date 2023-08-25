@@ -23,6 +23,12 @@
 
 /* MEDIA Queries (medium media) */
 @media screen and (max-width: 1024px) {
+/* 
+    .programs {
+        border: 1px solid white;
+        margin-top: 10rem;
+    } */
+
     .programs__wrapper {
         grid-template-columns: 1fr 1fr;
 
@@ -31,6 +37,12 @@
 
 /*MEDIA QUERIES (small screen)*/
 @media screen and (max-width: 600px) {
+
+    .programs {
+        /* border: 1px solid white; */
+        margin-top: 10rem;
+    }
+
     .programs__wrapper {
         grid-template-columns: 1fr;
         gap: 2rem;
