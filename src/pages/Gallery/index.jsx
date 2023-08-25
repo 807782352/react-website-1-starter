@@ -14,7 +14,7 @@ export default function Gallery() {
     images.push(require(`../../images/gallery${i}.jpg`));
   }
 
-  console.log(images);
+  // console.log(images);
 
   return (
     <>
