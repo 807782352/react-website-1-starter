@@ -317,3 +317,17 @@ Some notes
        如果 先写 max-width:1024px； 后写 max-width: 600px; 那么 画区间可以得知，后面的会 **继承覆盖**前面的 【但影响不到前面的，因为后面的无法包裹住前面的】
 
        但反过来，如果先 max-width: 600px;  后max-width:1024px，那么前面的600px将会**失效** 【后面的会覆盖掉前面的，因为后面的包裹住了前面的】。
+
+
+
+35. 用户点击发送 邮箱、Whatsapp、Facebook等
+
+    ```react
+    <div className="contact__wrapper">
+                <a href="mailto:kyrie807782352@gmail.com" target='_blank' rel='noreferrer noopener'> <MdEmail /></a>
+                <a href="http://m.me/kyrie63" target='_blank' rel='noreferrer noopener'> <BsMessenger /></a>
+                <a href="https://wa.me/+16478355170" target='_blank' rel='noreferrer noopener'> <IoLogoWhatsapp /></a>
+              </div>
+    ```
+
+    

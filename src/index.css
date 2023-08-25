@@ -43,7 +43,7 @@ body {
     max-width: 1920px;
     /* 居中 */
     margin: auto; 
-    border: white solid 1px;  
+    /* border: white solid 1px;   */
 }
 
 h1, h2, h3, h4, h5 {
